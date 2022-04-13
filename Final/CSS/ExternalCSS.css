@@ -1,0 +1,311 @@
+/* Imported Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+
+
+body {
+    width: 100%;
+    margin: 0%;
+    background-color: rgb(36, 51, 36);
+}
+
+/* Main image on landing page */
+
+.indexImage {
+
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    border-style: solid;
+    border-color: rgb(36, 51, 36);
+    object-fit: contain;
+}
+
+.indexHeading {
+    font-family: Roboto;
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+
+/* Customised nav bar floated horizontally */
+
+ul {
+    font-family: Roboto, Arial;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    padding: 0;
+    width: fit-content;
+    overflow: hidden;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change colour when hovering over nav bar */
+
+li a:hover {
+    color: rgb(136, 136, 133);
+}
+
+.helloThere {
+    font-family: Rubik, helvetica;
+    font-size: larger;
+    text-align: center;
+    background-color: #f1efee;
+    color: rgb(97, 98, 99);
+    padding: 80px;
+    width: 100%;
+    height: 633px;
+    margin: 0%;
+    border-style: solid;
+    border-color: rgb(36, 51, 36);
+}
+
+.review {
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(30, 31, 31);
+    text-align: center;
+}
+
+.colourBlock {
+    border: 5pc solid;
+    border-color: rgb(36, 51, 36);
+    width: 100%;
+    height: 100px;
+}
+
+/* Products for sale on shop page */
+
+.productImages {
+    height: 500px;
+    width: auto;
+    padding: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(36, 51, 36);
+
+}
+
+.colorFilter {
+    filter: opacity(30%);
+}
+
+.buyNow {
+    background-color: black;
+    border-color: black;
+    padding: 2px;
+
+}
+
+.buyNow:hover {
+    background-color: rgb(158, 131, 80);
+    border-color: rgb(158, 131, 80);
+}
+
+/* customised product images to expand when being hovered over */
+.img {
+    transition: all .2s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.2)
+}
+
+
+/* styling of contact form */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+/* Animated cololur block on About page. */
+
+.animatedBlock {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(36, 51, 36);
+    animation-name: colorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorAnimation {
+    from {
+        background-color: rgb(36, 51, 36)
+    }
+
+    to {
+        background-color: rgb(230, 226, 211)
+    }
+}
+
+.thisIsUs {
+    font-family: Anton;
+    color: rgb(36, 51, 36);
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+/* About us image caontained so it won't stretch, floated next to below text */
+
+.aboutImage {
+    float: left;
+    width: 50%;
+    border-style: solid;
+    border-color: rgb(36, 51, 36);
+    height: auto;
+    object-fit: contain;
+    padding: 1px;
+
+}
+
+/* About us paragraph floated next to photo */
+
+.aboutUs {
+    width: 50%;
+    height: auto;
+    background-color: #f1efee;
+    font-family: rubik, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5%;
+    float: right;
+    border-style: solid;
+    border-color: rgb(36, 51, 36);
+
+
+}
+
+.table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #f1efee;
+    color: #ccc;
+    font-family: rubik;
+    border-collapse: collapse;
+}
+
+/* Footer line - top */
+
+.footerHr {
+    border: none;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f1efee;
+}
+
+/* Instagram and Facebook external link icon styling */
+
+.footerLinks {
+    width: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Animated text on About page */
+
+.text-1 {
+    animation: text1;
+}
+
+.text-2 {
+    animation: text2;
+}
+
+.text-1,
+.text-2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 7s;
+    animation-timing-function: steps(20, end);
+    animation-iteration-count: infinite;
+}
+
+.text-1::after,
+.text-2::after {
+    content: "|";
+    /*Same colour as background to make it invisibale*/
+    color: #f1efee;
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 3s;
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes text2 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    60%,
+    90% {
+        width: 18em;
+    }
+}
+
+@keyframes text1 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    10%,
+    40% {
+        width: 20em;
+    }
+}
+
+@keyframes caret {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
