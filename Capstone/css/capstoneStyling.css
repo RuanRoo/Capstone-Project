@@ -1,0 +1,378 @@
+/*Font imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100&family=Rubik:wght@300&family=Urbanist:wght@500&display=swap');
+
+@font-face {
+    font-family: Quisas;
+    src: url(../fonts/Quisas\ SVG.otf);
+}
+
+/* Same background colour, header and navbar used throughout the website */
+
+body {
+    background-color: #C9BDAD;
+}
+
+header {
+    background-color: #F6F5EC;
+}
+
+li {
+    list-style: none;
+}
+
+.navBar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+
+}
+
+.shoppingCart {
+    color: #5D4334;
+}
+
+.navLink {
+    color: #5D4334;
+    font-family: Roboto;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.navLink:hover {
+    color: #C9BDAD;
+    text-decoration: none;
+}
+
+.mainHeader {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 100px;
+}
+
+#bannerImage {
+    width: 27%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 100px;
+}
+
+#bannerLogo {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    top: 220px;
+    left: 490px;
+}
+
+#bannerText2 {
+    font-family: Quisas, Arial;
+    font-size: 60px;
+    position: absolute;
+    right: 380px;
+    top: 280px;
+    transform: rotate(-30deg);
+    line-height: 20px;
+}
+
+#pattern {
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    opacity: 50%;
+}
+
+#tagline {
+    display: block;
+    max-width: 50%;
+    margin: 50px auto;
+}
+
+/* Instagram and Facebook external link icon styling */
+
+.footerLinks {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+#video {
+    opacity: 80%;
+}
+
+#catHeader {
+    font-family: Quisas;
+    font-size: 120px;
+    text-align: center;
+}
+
+.productBlock {
+    width: 30%;
+    height: auto;
+    margin: 15px 5%;
+    padding: 25px;
+    object-fit: contain;
+    float: left;
+
+}
+
+.productImages {
+    width: auto;
+    height: 300px;
+    margin: 25px auto;
+  }
+
+
+.productHeading {
+    font-family: Urbanist, Arial;
+}
+
+.subHeading {
+    font-family: Rubik;
+}
+
+.flexbox-layout{
+    display: flex;
+}
+
+.showMoreButton {
+    text-decoration: none;
+    width: auto;
+    margin: 5px 10px;
+    padding: 5px 15px;
+    background-color: #5D4334;
+    color: #F3F2EC !important;
+    border-radius: 5px;
+    border: none;
+    transition: 0.7s ease;
+}
+.showMoreButton:hover {
+    color: #C9BDAD;
+    text-decoration: none;
+}
+
+.cartButton {
+    text-decoration: none;
+    width: auto;
+    margin: 5px 10px;
+    padding: 3px 15px;
+    background-color: #5D4334;
+    color: #F3F2EC !important;
+    border-radius: 5px;
+    border: none;
+    transition: 0.7s ease;
+}
+
+#cartHeader {
+    height: 300px;
+    background-color: #9F7D58;
+    margin: 0;
+}
+
+#cartImage {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+#checkoutHeader {
+    font-family: Urbanist;
+    font-size: 40px;
+    margin-left: 25%;
+    margin-bottom: 35px;
+    position: absolute;
+    top: 280px;
+    
+}
+
+#checkoutInfo {
+    width: 60%;
+    height: 850px;
+    float: left;
+    background-color: #F6F5EC;
+    margin: 0;
+    padding: 25px;
+}
+.shippingMethod {
+    width: 50%;
+    margin: 5px 0;
+    border: solid 2px #5D4334;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #E6DDCC;
+}
+
+#cartForm {
+    width: 40%;
+    height: 800px;
+    float: right;
+    padding: 25px;
+    margin: 0;
+    overflow: auto;
+}
+
+.cartHeading {
+
+    font-family: Urbanist, Arial;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.cartItemImage {
+    width: 100px;
+    height: auto;
+
+}
+
+.cartItemPrice {
+    font-family: Urbanist, Arial;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.cartHeadings {
+    font-family: Urbanist, Arial;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 15px;
+    }
+
+.hr {
+    width: 200px;
+    border: 2px solid #363636;
+    background-color: #363636;
+    margin-left: 20px;
+}
+
+#pickupHeader {
+   margin: 15px 0;
+
+}
+
+#pickupContent {
+    width: 50%;
+    background-color: #E6DDCC;
+    border: 1px solid #5D4334;
+    border-collapse: separate;
+    border-radius: 5px;
+}
+
+#pickupTr {
+    font-size: 16px;
+    font-weight: bolder;
+   
+}
+
+.pickupTd {
+    padding: 5px;
+}
+
+
+/* Div styling where accordion function is nested */
+
+#accordion {
+    width: 50%;
+    
+}
+
+/* Styling of div where my accordion cards are nested */
+
+.card{
+    background-color: #C9BDAD;
+    color: #363636;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #5D4334;
+    font-weight: bolder;
+}
+
+/* Styling of each heading */
+
+.accordHeading {
+    font-family: Roboto,Arial;
+    margin: 0;
+    
+}
+
+/* Styling of each accordion body */
+
+.cardBody {
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    cursor: default;
+}
+
+
+#checkoutTable {
+    width: 25%;
+    height: 100px;
+    padding: 5px;
+    background-color: #E6DDCC;
+    border: 1px solid #5D4334;
+    border-collapse: separate;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+#deliveryOptions {
+    height: 300px;
+}
+
+#discountInput {
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+#discountButton {
+    border-radius: 5px;
+    background-color: #5D4334;
+    color: #F3F2EC;
+}
+
+.backpackLayout {
+    width: 50%;
+    margin: 45px 15%;
+
+}
+.backpackHeadings {
+    font-size: 24px;
+}
+
+.backpackImg {
+    width: 300px;
+    height: auto;
+    margin-left: 25%;
+    display: block;
+}
+
+#confirmOrder {
+    text-decoration: none;
+    width: auto;
+    margin: 25px auto;
+    padding: 3px 15px;
+    display: block;
+    background-color: #5D4334;
+    color: #F3F2EC;
+    border-radius: 5px;
+}
